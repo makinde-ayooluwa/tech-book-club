@@ -1,43 +1,276 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-
-<head> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <link rel="stylesheet" href="bootstrap.min.css">
-    <meta charset="UTF-8" /> 
-    <meta name="viewport" 
-          content= "width=device-width, 
-                    initial-scale=1.0" /> 
-    <title>Bootstrap Collapsible Content</title> 
-    <style> 
-       
-    </style> 
-</head> 
-
-<body> 
-    <nav class="navbar bg-dark navbar-dark navbar-expand-sm"> 
-        <!-- Create a div for navbar-brand --> 
-        <a class=navbar-brand href='#'> 
-        <img src='images/wisdompetlogo.svg' style="width: 40px;" alt="wisdow pet 
-        logo"/> 
-        </a> 
-        <!-- Create a hamburger button to control the collapseTab--> 
-        <button class='navbar-toggler' type='button' data-bs-toggle='collapse' data
-        bs-target='#collapseTab' aria-controls="collapseTab" aria-expanded='false' aria
-        label='Toggle navigation'> 
-        <span class='navbar-toggler-icon'></span> 
-        </button> <!--end of collapse button --> 
-        <!-- Create a div to specified the collapse session --> 
-        <div class='collapse navbar-collapse'  id='collapseTab'> 
-        <!-- nav list--> 
-        <div class='navbar-nav'> 
-        <a href="#" class="nav-item nav-link active">Home</a> 
-        <a href="#" class="nav-item nav-link">Services</a> 
-        <a href="#" class="nav-item nav-link">Mission Impossible</a> 
-        <a href="#" class=" nav-item nav-link">Staff</a> 
-        <a href="#" class="nav-item nav-link">Testimonials</a> 
-        </div> 
-        </div> <!-- end of collapse--> 
-        </nav> 
-</body> 
-
-</html> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech book club</title>
+    <style>
+        #section1{
+            background-color: whitesmoke;
+        }
+        #header{
+            top: 20px;
+            position: relative;
+            margin-bottom: 150px;
+        }
+        #header .row .col-md-6 .h4{
+            margin-left: -620px;
+        }
+        #home .h1{
+           font-size: 70px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        #home .btn{
+            border: 3px solid gray;
+            background-color: rgb(255,255,230);
+        }
+        #home #image{
+            position: relative;
+            bottom: 110px;
+        }
+        #home #image2{
+            position: relative;
+            bottom: 100px;
+            left: 50px;
+        }
+        #home #developers{
+            position: relative;
+            right: 470px;
+            bottom: 100px;
+        }
+        #home #developers img{
+            position: relative;
+            width: 150px;
+            top: -60px;
+            margin-bottom: -90px;
+        }
+        #section2{
+            margin-top: 80px;
+        }
+        #section2 .h1{
+            position: relative;
+            top: 20px;
+        }
+        #section2 #check{
+            top: 60px;
+            position: relative;
+        }
+        #section2 #check-des{
+            position: relative;
+            left: 40px;
+            top: 15px;
+        }
+        #section2 #container2{
+            margin-top: 200px;
+        }
+        #container2 .h2,#container2 p{
+            position: relative;
+            top: 150px;
+        }
+        #container3{
+            border-radius: 10px;
+            width: 70%;
+            margin-left: 15%;
+            margin-top: 90px;
+            height: 300px;
+            background-color: rgb(240, 240, 239);
+        }
+        #container3 .col-md-6{
+            position: relative;
+            top: 50px;
+            margin-right: 90px;
+        }
+        #container3 .col-md-6:nth-of-type(2){
+            top: -85px;
+            left: 250px;
+        }
+        #container3 .col-md-6:nth-of-type(3){
+            top: -220px;
+            left: 500px;
+        }
+        #container3 .col-md-6:nth-of-type(4){
+            top: -360px;
+            left: 750px;
+        }
+        #container3 .col-md-6 p{
+            position: relative;
+            top: -30px;
+            left: 20px;
+        }
+        #container4{
+            margin-top: 100px;
+        }
+        #container4 .col-sm-4{
+            border: 2px solid black;
+            width: 200px;
+            margin-top: 40px;
+            margin-left: 200px;
+            border-radius: 10px;
+        }
+        #container4 .col-sm-4:nth-of-type(2){
+            width: 250px;
+        }
+        #container4 .col-sm-4 img{
+            margin-bottom: 20px;
+            display: flex;
+        }
+        #footer{
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="section1" class="container-fluid">
+        <div id="header" class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img width="30" src="images/Opera Snapshot_2025-03-18_103554_www.frontendmentor.io.png">
+                </div>
+                <div class="col-md-6">
+                    <p class="h4 text-start text-dark">Tech book club</p>
+                </div>
+            </div>
+        </div>
+        <div id="home" class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="h1">Join the <br>ultimate tech <br>book club.</p>
+                    <p>Turn your reading time into learning time with fellow tech<br> enthusiats. Get curiated recommendations,join vibrant <br>discussions,and level up your skills one chapter at a time.</p>
+                    <p onclick="document.location.href='#container4'" class="btn">REVIEW MEMBERSHIP OPTIONS </p>
+                </div>
+                <div class="col-md-6">
+                    <img id="image" src="Opera Snapshot_2025-03-18_102807_www.frontendmentor.io.png">
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img id="image2" src="images/Opera Snapshot_2025-03-18_103044_www.frontendmentor.io.png">
+                    </div>
+                    <div id="developers" class="col-md-6">
+                        <img src="images/5-star-rating-review-star-transparent-free-png.webp">
+                        <p>200+ developers joined already</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="section2" class="container-fluid">
+        <div id="container1" class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="images/Opera Snapshot_2025-03-18_102915_www.frontendmentor.io.png">
+                </div>
+                <div class="col-md-6">
+                    <p class="h1 text-center text-dark">Read together,<br>grow together.</p>
+                    <img width="30" id="check" src="images/checkbox-check-mark-user-interface-clip-art-check-cliparts.jpg">
+                    <p id="check-des">Monthly curated tech reads selected by<br>industry experts.</p>
+                    <img width="30" id="check" src="images/checkbox-check-mark-user-interface-clip-art-check-cliparts.jpg">
+                    <p id="check-des">Virtual and in-person meetups for deep-<br>dive discussions.</p>
+                    <img width="30" id="check" src="images/checkbox-check-mark-user-interface-clip-art-check-cliparts.jpg">
+                    <p id="check-des">Early access to new tech book releases</p>
+                    <img width="30" id="check" src="images/checkbox-check-mark-user-interface-clip-art-check-cliparts.jpg">
+                    <p id="check-des">Author Q&A sessions with tech thought <br>leaders.</p>
+                </div>
+            </div>
+        </div>
+        <div id="container2" class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="h2 text-start">Not your average <br>book club.</p>
+                    <p>Connect with a community that speaks your language-<br>from <b>Python</b> to <b>Typescript</b> and everything in between.Our <br>discussions blend technical depth with practical <br>applications.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/Opera Snapshot_2025-03-18_103001_www.frontendmentor.io.png">
+                </div>
+            </div>
+        </div>
+        <div id="container3">
+            <p class="h1 text-center">Your tech <br>reading journey.</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <img width="50" src="images/number.png">
+                    <p>1</p>
+                    <p id="number-des">Choose your <br>membership tier.</p>
+                </div>
+                <div class="col-md-6">
+                    <img width="50" src="images/number.png">
+                    <p>2</p>
+                    <p id="number-des">Get your monthly <br>book selection.</p>
+                </div>
+                <div class="col-md-6">
+                    <img width="50" src="images/number.png">
+                    <p>3</p>
+                    <p id="number-des">Join our <br>discussion forums.</p>
+                </div>
+                <div class="col-md-6">
+                    <img width="50" src="images/number.png">
+                    <p>4</p>
+                    <p id="number-des">Attend exclusive <br>meetups</p>
+                </div>
+            </div>
+        </div>
+        <div id="container4" class="container">
+            <p class="h1 text-center">Membership Options</p>
+            <div class="container" id="card">
+                <div class="row">
+                    <div id="card1" class="col-sm-4">
+                        <p class="h2 text-start">Starter</p>
+                        <br>
+                        <p style="font-size: 30px;"><b>$19</b> <sup>/month</sup></p>
+                        <hr>
+                        <img width="20" id="card-ckeck" src="images/checkbox-check-mark-user-interface-clip-art-check-cliparts.jpg">
+                        <p style="position: relative;left: 30px;bottom: 40px;">1 book/month</p>
+                        <img style="position: relative;top: -30px;" width="20" id="card-ckeck" src="images/checkbox-check-mark-user-interface-clip-art-check-cliparts.jpg">
+                        <p style="position: relative;top: -75px;left: 30px;">Online Forums</p>
+                        <p class="btn" style="border: 2px solid black; position: relative;top: -45px;left: 15px;background-color: burlywood;">SUBSCRIBE NOW</p>
+                    </div>
+                    <div style="background: linear-gradient(to right,burlywood,gray);" id="card2" class="col-sm-4">
+                        <p class="h2">Pro</p>
+                        <p style="font-size: 30px;"><b>$29</b> <sup>/month</sup></p>
+                        <hr>
+                        <img width="20" id="card-ckeck" src="images/checkbox-check-mark-user-interface-clip-art-check-cliparts.jpg">
+                        <p style="position: relative;left: 30px;bottom: 40px;">2 books/month</p>
+                        <img style="position: relative;top: -30px;" width="20" id="card-ckeck" src="images/checkbox-check-mark-user-interface-clip-art-check-cliparts.jpg">
+                        <p style="position: relative;top: -75px;left: 30px;">Virtual Meetups</p>
+                        <p class="btn" style="border: 2px solid black; position: relative;top: -45px;left: 40px;background-color: burlywood;">SUBSCRIBE NOW</p>
+                    </div>
+                    <div id="card3" class="col-sm-4">
+                        <p class="h2">Enterprise</p>
+                        <p style="font-size: 30px;"><b>Custom</b></p>
+                        <hr>
+                        <img width="20" id="card-ckeck" src="images/checkbox-check-mark-user-interface-clip-art-check-cliparts.jpg">
+                        <p style="position: relative;left: 30px;bottom: 40px;">Team Access</p>
+                        <img style="position: relative;top: -30px;" width="20" id="card-ckeck" src="images/checkbox-check-mark-user-interface-clip-art-check-cliparts.jpg">
+                        <p style="position: relative;top: -75px;left: 30px;">Private Sessions</p>
+                        <p class="btn" style="border: 2px solid black; position: relative;top: -45px;left: 15px;background-color: burlywood;">TALK TO US</p>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-top: 90px;" class="container text-center">
+                <img width="200" src="images/5-star-rating-review-star-transparent-free-png.webp">
+                <p class="quote h1 text-success">"This book club transformed my technical <br>reading from a solitary activity into an <br>enriching community experience. The<br> discussions are gold!"</p>
+                <p class="text-dark" style="margin-top: 30px;">Sarah Chen,Software Architect</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-success" id="footer">
+        <p class="h1 text-white text-center">Ready to debug your<br>reading list?</p>
+        <p style="border:3px solid gray; position:relative;right: -40%;" onclick="document.location.href='#container4'" class="btn text-white text-start">REVIEW MEMBERSHIP OPTIONS </p>
+        <div class="row">
+            <div class="col-md-6">
+                <img style="margin-top: 50px;margin-left: 600px;" id="image2" src="images/Opera Snapshot_2025-03-18_103044_www.frontendmentor.io.png">
+            </div>
+            <div id="developers" class="col-md-6">
+                <img style="position: relative;top: -50px;left: -80px;" src="images/5-star-rating-review-star-transparent-free-png.webp">
+                <p style="position: relative;bottom: 130px;left: -40px;">200+ developers joined already</p>
+            </div>
+        </div>
+        <hr style="width: 70%;margin-left: 15%;background-color: white;border: none;height: 2px;">
+        <p style="margin-left: 15%;" class="text-white">&copy; 2024 - Tech Book Club</p>
+        <br>
+        <br>
+    </div>
+</body>
+</html>
